@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Config
-%define	pnam	Reader
+%define		pdir	Config
+%define		pnam	Reader
 Summary:	ConfigReader - read directives from a configuration file
 Summary(pl):	ConfigReader - odczyt dyrektywy z pliku konfiguracyjnego
 Name:		perl-ConfigReader
