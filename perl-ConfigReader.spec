@@ -30,9 +30,8 @@ do sprawdzania sk³adni.
 %setup -q -n %{pdir}%{pnam}-%{version}
 
 %build
-echo 'use ExtUtils::MakeMaker; WriteMakefile(VERSION_FROM=>"Spec.pm",
-      NAME=>"ConfigReader::Spec");' > Makefile.PL
-perl Makefile.PL
+touch Makefile.PL
+perl -MExtUtils::MakeMaker -e 'WriteMakefile(NAME=>"ConfigReader::Spec");'
 %{__make}
 
 %install
