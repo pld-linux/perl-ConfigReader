@@ -32,19 +32,21 @@ do sprawdzania sk³adni.
 
 %build
 touch Makefile.PL
-%{__perl} -MExtUtils::MakeMaker -e 'WriteMakefile(NAME=>"ConfigReader::Spec");'
+%{__perl} -MExtUtils::MakeMaker -e 'WriteMakefile(NAME=>"ConfigReader::Spec");' \
+	INSTALLDIRS=vendor
 %{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%dir %{perl_sitelib}/ConfigReader
-%{perl_sitelib}/ConfigReader/*.pm
+%dir %{perl_vendorlib}/ConfigReader
+%{perl_vendorlib}/ConfigReader/*.pm
 %{_mandir}/man3/*
