@@ -3,7 +3,7 @@ Summary:	ConfigReader perl module
 Summary(pl):	Modu³ perla ConfigReader
 Name:		perl-ConfigReader
 Version:	0.5
-Release:	1
+Release:	2
 License:	LGPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/ConfigReader/ConfigReader-%{version}.tar.gz
