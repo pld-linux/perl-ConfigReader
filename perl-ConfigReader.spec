@@ -31,7 +31,7 @@ do sprawdzania sk³adni.
 
 %build
 touch Makefile.PL
-perl -MExtUtils::MakeMaker -e 'WriteMakefile(NAME=>"ConfigReader::Spec");'
+%{__perl} -MExtUtils::MakeMaker -e 'WriteMakefile(NAME=>"ConfigReader::Spec");'
 %{__make}
 
 %install
