@@ -2,7 +2,7 @@
 %define		pdir	Config
 %define		pnam	Reader
 Summary:	ConfigReader - read directives from a configuration file
-Summary(pl):	ConfigReader - odczyt dyrektywy z pliku konfiguracyjnego
+Summary(pl.UTF-8):   ConfigReader - odczyt dyrektywy z pliku konfiguracyjnego
 Name:		perl-ConfigReader
 Version:	0.5
 Release:	5
@@ -21,11 +21,11 @@ The programmer can easily specify the directives to be read, as well as
 their default values and a parsing function or method to use.  A lot of
 work went into error handling.
 
-%description -l pl
-ConfigReader jest zbiorem klas, s³u¿±cych do czytania plików
-konfiguracyjnych.  Programista mo¿e w prosty sposób wskazaæ dyrektywy do
-przeczytania, ich domy¶lne warto¶ci i funkcjê, któr± nale¿y zastosowaæ
-do sprawdzania sk³adni.
+%description -l pl.UTF-8
+ConfigReader jest zbiorem klas, sÅ‚uÅ¼Ä…cych do czytania plikÃ³w
+konfiguracyjnych.  Programista moÅ¼e w prosty sposÃ³b wskazaÄ‡ dyrektywy do
+przeczytania, ich domyÅ›lne wartoÅ›ci i funkcjÄ™, ktÃ³rÄ… naleÅ¼y zastosowaÄ‡
+do sprawdzania skÅ‚adni.
 
 %prep
 %setup -q -n %{pdir}%{pnam}-%{version}
