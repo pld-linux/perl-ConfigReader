@@ -4,7 +4,7 @@ Summary:	ConfigReader - read directives from a configuration file
 Summary(pl.UTF-8):	ConfigReader - odczyt dyrektywy z pliku konfiguracyjnego
 Name:		perl-ConfigReader
 Version:	0.5
-Release:	6
+Release:	7
 License:	LGPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}%{pnam}-%{version}.tar.gz
